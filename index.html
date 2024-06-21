@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛以薇的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e0c7; /* 橙色调，较低饱和度 */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        h1, h2 {
+            color: white; /* 修改为白色字体 */
+            text-align: center; /* 居中对齐 */
+        }
+        h2 {
+            color: black; /* 将个人简介部分的字体颜色改为黑色 */
+        }
+        .header {
+            grid-column: span 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around; /* 调整为居中对齐 */
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            flex-direction: column; /* 垂直方向排列 */
+            text-align: center; /* 文字居中 */
+        }
+        .header h1 {
+            margin: 5px 0; /* 调整姓名和教育背景的间距 */
+        }
+        .header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 10px 0; /* 调整头像的上下间距 */
+        }
+        .contact {
+            grid-column: span 2; /* 跨两列 */
+            background-color: #444;
+            color: white; /* 白色字体颜色 */
+            padding: 20px;
+            text-align: center; /* 居中对齐 */
+        }
+        .contact h2 {
+            color: white; /* 白色字体颜色 */
+        }
+        .contact p {
+            margin: 5px 0;
+            color: white; /* 白色字体颜色 */
+        }
+        .content {
+            grid-column: span 2;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .content p {
+            line-height: 1.6;
+        }
+        .image-gallery {
+            grid-column: span 2;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #333;
+            padding: 20px;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .image-description {
+            color: white; /* 白色字体 */
+            text-align: center; /* 居中对齐 */
+            margin-top: -10px; /* 调整描述文字的间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>毛以薇</h1>
+            <h1>威廉玛丽大学 应用数学专业</h1>
+            <!-- 将姓名和教育背景居中，并改为白色字体 -->
+            <img src="照片.jpg" alt="照片">
+        </div>
+        <div class="contact">
+            <h2>联系方式</h2>
+            <p>Email: 463815440@qq.com</p>
+            <p>Phone: 13681274878</p>
+        </div>
+        <div class="content">
+            <h2>个人简介</h2>
+            <p>我喜好与数学相关的一切知识，从最简单的代数定义到复杂的定理，从哥德尔的不完全性到几何拓扑学，从数学的研究和教学方法到数学的历史，我对这一切充满了好奇心。特别是，我对如何利用数学知识帮助实际生活感兴趣，这也是我选择应用数学作为专业的原因。在应用数学领域，我专攻统计学，擅长使用R语言进行数据清理和分析，并且有实际数据建模的经验。此外，我熟练掌握Python编程，特别是其语言学分词和数据可视化的相关库。</p>
+            <p>在生活中，我有许多爱好。我非常喜欢绘画、排版设计和视频剪辑，并且能熟练使用Adobe After Effects、Adobe InDesign等工具。在这些爱好中，我也充分运用了我的数学知识，通过比例安排和色调穿插让文字或画面看起来更加舒适。</p>
+        </div>
+        <div class="image-gallery">
+            <div>
+                <img src="图2.jpg" alt="绘画与作品集">
+                <div class="image-description">绘画与作品集</div>
+            </div>
+            <div>
+                <img src="图3.jpg" alt="数据分析可视化">
+                <div class="image-description">数据分析可视化</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
